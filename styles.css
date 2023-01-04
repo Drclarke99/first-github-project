@@ -34,12 +34,16 @@ a {
     text-decoration: none;
 }
 
+p {
+    line-height: 1.5;
+}
+
 /* LANDING */
 nav {
-    height: 80px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 32px;
 }
 
 .nav__container {
@@ -54,14 +58,18 @@ nav {
 }
 
 .nav__logo--img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     margin-right: 16px;
+}
+
+.nav__logo--title {
+    color: #242424;
 }
 
 .nav__link {
     font-size: 16px;
-    color: #242424;
+    color: rgba(32, 34, 36, 0.8);
     font-weight: bold;
     margin-left: 32px;
 }
@@ -89,7 +97,7 @@ li:nth-child(5) {
 }
 
 .landing__description--wrapper {
-    width: 40vw;
+    width: 40%;
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -100,16 +108,18 @@ li:nth-child(5) {
 }
 
 .landing__description--para {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .landing__description--form {
-    border: 2px solid lightgrey;
-    border-radius: 50px;
-    padding: 12px;
+    position: relative;
+    text-align: center;
 }
 
 .landing__description--btn {
+    position: absolute;
+    right: 0;
+    top: 0;
     color: white;
     background-color: #6415FF;
     border: none;
@@ -117,12 +127,18 @@ li:nth-child(5) {
     padding: 16px 32px;
     font-size: 16px;
     font-weight: bold;
+    margin-right: 0.7rem;
+    margin-top: 0.7rem;
 }
 
 .landing__description--input {
-    border: none;
-    font-size: 20px;
-    margin: 0 28px 0 16px;
+    width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: 50px;
+    font-size: 16px;
+    padding-left: 2rem;
+    font-weight: 500;
+    height: 75px;
 }
 
 .landing__description--title,
@@ -135,12 +151,30 @@ li:nth-child(5) {
     margin-top: 8px;
 }
 
+.landing__description--customers--para {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(160, 174, 192, 0.95);
+}
+
 .landing__img--wrapper {
     display: flex;
-    width: 60vw;
+    width: 60%;
 }
 
 .landing__img,
 .landing__img--customers {
     width: 100%;
+}
+
+/* FEATURES */
+.features__title--wrapper {
+    text-align: center;
+}
+
+.features__title {
+    font-size: 16px;
+    letter-spacing: 0.1em;
 }
