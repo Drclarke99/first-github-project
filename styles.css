@@ -455,19 +455,30 @@ li:nth-child(5) {
 
 .pricing__plans {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .plan {
     width: calc(100%/3);
     display: flex;
     flex-direction: column;
-    padding: 8px;
+    position: relative;
+    overflow: hidden;
+    margin: 24px;
+    box-shadow: 1px 1px 2px;
 }
 
 .plan__1 {
-    border: 1px solid #a8acad;
-    border-radius: 10px;
+    border: 1px solid #babfc0da;
+    border-radius: 12px;
+}
+
+.plan__1--top {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .plan__name,
@@ -476,44 +487,167 @@ li:nth-child(5) {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 2px solid #a8acad;
-    margin-bottom: 16px;
+    padding: 32px;
 }
 
 .plan__title {
     font-weight: 700;
     font-size: 20px;
-    padding: 16px 0;
 }
 
 .plan__price {
     font-weight: 700;
     font-size: 40px;
-    padding-bottom: 16px;
+    margin-top: 20px;
 }
 
 .plan__payment {
     color: #a8acad;
     letter-spacing: 0.1em;
     font-weight: 700;
-    padding-bottom: 16px;
+    margin-top: 20px;
+}
+
+.plan__description {
+    border-top: 2px solid #a8acad;
+    border-bottom: 2px solid #a8acad;
 }
 
 .plan__description--header {
     font-weight: 700;
     font-size: 20px;
-    padding-bottom: 16px;
 }
 
 .plan__description--para {
-    color:#a8acad;
-    font-weight: 400;
-    padding-bottom: 16px;
+    color:#5f6263d5;
+    font-weight: 500;
+    margin-top: 20px;
 }
 
 .plan__purchase {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 16px;
+    padding: 32px;
+}
+
+.plan__btn {
+    color: white;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 16px 60px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.plan__2 {
+    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    border-radius: 12px;
+}
+
+.plan2__description {
+    border-top: 2px solid #5d7cd3;
+    border-bottom: 2px solid #5d7cd3;
+}
+
+.plan2__btn {
+    color: rgb(76, 81, 191);
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 60px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.plan2__title {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.plan2__price {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.plan2__payment {
+    color: #bbbfc0;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.plan2__description--header {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.plan2__description--para {
+    color:#abafb1ee;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.plan__3--top {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.plan3__btn {
+    color: white;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 16px 60px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* CONTACT */
+.contact__row {
+    background-color: rgb(100, 21, 255);
+    height: 350px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__para {
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+.start__btn {
+    color: white;
+    background-color: #eb6363;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 24px;
+}
+
+.contact__btn {
+    color: white;
+    background-color: transparent;
+    border: 1px solid #abafb1ee;
+    border-radius: 50px;
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: bold;
 }
