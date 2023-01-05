@@ -397,7 +397,7 @@ li:nth-child(5) {
 }
 
 .fa-dollar-sign {
-    background-color: #87a487be;
+    background-color: #82ac82ce;
     border-radius: 50%;
     padding: 16px 20px;
 }
@@ -417,4 +417,103 @@ li:nth-child(5) {
     color: rgba(82, 89, 97, 0.95);
     font-weight: 500;
     letter-spacing: 1.25;
+}
+
+/* PRICING */
+.pricing__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing__title,
+.pricing__headline,
+.pricing__para {
+    margin-bottom: 32px;
+}
+
+.pricing__title {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+}
+
+.pricing__headline {
+    font-size: 50px;
+    color: rgb(31, 35, 39);
+    font-weight: 700;
+}
+
+.pricing__para {
+    line-height: 1.5;
+    color: rgba(82, 89, 97, 0.95);
+    font-weight: 500;
+    letter-spacing: 1.25;
+    width: 100%;
+    max-width: 500px;
+}
+
+.pricing__plans {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.plan__1 {
+    border: 1px solid #a8acad;
+    border-radius: 10px;
+}
+
+.plan__name,
+.plan__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #a8acad;
+    margin-bottom: 16px;
+}
+
+.plan__title {
+    font-weight: 700;
+    font-size: 20px;
+    padding: 16px 0;
+}
+
+.plan__price {
+    font-weight: 700;
+    font-size: 40px;
+    padding-bottom: 16px;
+}
+
+.plan__payment {
+    color: #a8acad;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+.plan__description--header {
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 16px;
+}
+
+.plan__description--para {
+    color:#a8acad;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
+
+.plan__purchase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 16px;
 }
