@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    margin: 0 16px;
+}
+
 .purple {
     color: #6415FF;
 }
@@ -28,6 +32,12 @@ html {
 
 .btn {
     cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.btn:hover {
+    background-color: #492d85;
+    color: rgb(235, 235, 235);
 }
 
 li {
@@ -94,6 +104,11 @@ nav {
 
 .nav__logo--title {
     color: #242424;
+    transition: all 300ms ease;
+}
+
+.nav__logo:hover .nav__logo--title {
+    color: rgb(100, 21, 255);
 }
 
 .nav__link {
@@ -128,7 +143,8 @@ li:nth-child(5) {
 }
 
 .nav__link--primary:hover {
-    background-color: #6315ffc7;
+    background-color: #492d85;
+    color: rgb(235, 235, 235);
 }
 
 /* LANDING */
@@ -182,7 +198,18 @@ li:nth-child(5) {
     padding-left: 2rem;
     font-weight: 500;
     height: 75px;
+    transition: all 300ms ease;
 }
+
+.landing__description--input:focus {
+    border-color:rgb(100, 21, 255);
+}
+
+.landing__description--input:hover{
+    border-color: #a8acad;
+}
+
+
 
 .landing__description--title,
 .landing__description--para,
@@ -579,6 +606,12 @@ li:nth-child(5) {
     font-weight: bold;
 }
 
+.plan__btn:hover {
+    box-shadow: rgba(0,0,0,0.1) 0px 5px 10px 4px;
+    transform: translate(2px, -1px);
+    color: white;
+}
+
 .plan__2 {
     background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
     border-radius: 12px;
@@ -597,6 +630,13 @@ li:nth-child(5) {
     padding: 16px 60px;
     font-size: 16px;
     font-weight: bold;
+}
+
+.plan2__btn:hover {
+    box-shadow: rgba(0,0,0,0.1) 0px 5px 10px 4px;
+    transform: translate(2px, -1px);
+    background-color: rgb(192, 192, 192);
+    color: rgb(76, 81, 191);
 }
 
 .plan2__title {
@@ -650,6 +690,12 @@ li:nth-child(5) {
     font-weight: bold;
 }
 
+.plan3__btn:hover {
+    box-shadow: rgba(0,0,0,0.1) 0px 5px 10px 4px;
+    transform: translate(2px, -1px);
+    color: white;
+}
+
 /* CONTACT */
 .contact__row {
     background-color: rgb(100, 21, 255);
@@ -680,6 +726,10 @@ li:nth-child(5) {
     margin-right: 24px;
 }
 
+.start__btn:hover {
+    background-color: #ad4141;
+}
+
 .contact__btn {
     color: white;
     background-color: transparent;
@@ -688,6 +738,11 @@ li:nth-child(5) {
     padding: 20px 40px;
     font-size: 16px;
     font-weight: bold;
+}
+
+.contact__btn:hover {
+    color:#6415FF;
+    background-color: white;
 }
 
 /* FOOTER */
@@ -774,4 +829,229 @@ footer {
 
 .footer__info--social:hover {
     background-color: rgb(168, 162, 162);
+}
+
+/* LARGE SMARTPHONES, TABLETS, LAPTOPS */
+@media (max-width: 1025px) {
+    .landing__description {
+        flex-direction: column;
+    }
+    
+    .landing__description--wrapper {
+        margin-bottom: 20px;
+        width: 80%;
+        align-items: center;
+    }
+
+    .landing__description--title {
+        font-size: 24px;
+    }
+
+    .landing__description--para,
+    .landing__description--customers--para {
+        text-align: center;
+    }
+
+    .landing__description--form {
+        width: 80%;
+    }
+
+    .features__title--para {
+        text-align: center;
+    }
+
+    .services {
+        justify-content: center;
+        margin: 0 60px;
+    }
+
+    .service {
+        width: calc(100%/2);
+    }
+
+    .quality__headline {
+        font-size: 32px;
+    }
+
+    .quality__img--wrapper {
+        max-height: 300px;
+    }
+
+    .steps__headline {
+        font-size: 32px;
+    }
+    
+    .step__description--title {
+        font-size: 20px;
+    }
+
+    .values {
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .value {
+        margin-bottom: 16px;
+    }
+
+    .value:nth-last-child(odd) {
+        margin-left: 0;
+    }
+
+    .pricing__para {
+        text-align: center;
+    }
+
+    .pricing__plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contact__row {
+        flex-direction: column;
+    }
+
+    .contact__para {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    footer {
+        padding: 16px;
+    }
+}
+
+/*SMALL TABLETS, LARGE SMARTPHONES */
+@media (max-width: 768px) {
+    .landing__description--title {
+        text-align: center;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quality__description {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .quality__img--wrapper {
+        margin-bottom: 32px;
+    }
+
+    .quality__description--wrapper {
+        text-align: center;
+        align-items: center;
+    }
+
+    .steps__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps__img--wrapper {
+        margin-bottom: 32px;
+    }
+
+    .steps__description--wrapper {
+        align-items: center;
+    }
+
+    .step {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step__description {
+        text-align: center;
+    }
+
+    .values__img--wrapper {
+        margin-bottom: 32px;
+    }
+
+    .values {
+        width: 100%;
+    }
+
+    .value__headline {
+        justify-content: center;
+    }
+
+    .links {
+        flex-wrap: wrap;
+    }
+
+    .link {
+        width: calc(100%/3);
+        margin-bottom: 48px;
+    }
+
+    .footer__info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__info--logo,
+    .footer__info--copy {
+        margin-bottom: 32px;
+    }
+}
+
+/* LAYOUT CHANGES */
+@media (max-width: 639px) {
+    .landing__description--form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features__title--headline {
+        font-size: 36px;
+    }
+
+    .service {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service__img--wrapper {
+        margin-bottom: 12px;
+    }
+
+    .service__description {
+        text-align: center;
+    }
+
+    .service__description--title {
+        margin-bottom: 12px;
+    }
+
+    .contact__para {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .start__btn {
+        margin-bottom: 12px;
+        margin-right: 0;
+    }
+
+    .link {
+        width: calc(100%/5);
+        text-align: center;
+    }
 }
