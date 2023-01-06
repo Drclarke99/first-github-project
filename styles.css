@@ -832,7 +832,7 @@ footer {
 }
 
 /* LARGE SMARTPHONES, TABLETS, LAPTOPS */
-@media (max-width: 1025px) {
+@media (max-width: 1024px) {
     .landing__description {
         flex-direction: column;
     }
@@ -1006,7 +1006,7 @@ footer {
 }
 
 /* LAYOUT CHANGES */
-@media (max-width: 639px) {
+@media (max-width: 640px) {
     .landing__description--form {
         display: flex;
         flex-direction: column;
