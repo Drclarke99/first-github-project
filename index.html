@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TReact</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/1c2b3b5f8e.js"
       crossorigin="anonymous"
@@ -23,15 +24,32 @@
             <h2 class="nav__logo--title">Treact</h2>
           </a>
           <ul class="nav__links">
-            <li><a href="#" class="nav__link link__hover-effect link__hover-effect--nav">Home</a></li>
+            <li><a href="#" class="nav__link link__hover-effect link__hover-effect--nav">About</a></li>
             <li><a href="#" class="nav__link link__hover-effect link__hover-effect--nav">Blog</a></li>
             <li><a href="#" class="nav__link link__hover-effect link__hover-effect--nav">Pricing</a></li>
             <li><a href="#" class="nav__link link__hover-effect link__hover-effect--nav">Contact Us</a></li>
-            <li><a href="#" class="nav__link link__hover-effect link__hover-effect--nav">Login</a></li>
+            <li><a href="#" class="nav__link nav__link--last link__hover-effect link__hover-effect--nav">Login</a></li>
             <li>
               <a href="#" class="nav__link--primary">Sign Up</a>
             </li>
           </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fa-solid fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li><a href="#" class="menu__link link__hover-effect link__hover-effect--nav">About</a></li>
+              <li><a href="#" class="menu__link link__hover-effect link__hover-effect--nav">Blog</a></li>
+              <li><a href="#" class="menu__link link__hover-effect link__hover-effect--nav">Pricing</a></li>
+              <li><a href="#" class="menu__link link__hover-effect link__hover-effect--nav">Contact Us</a></li>
+              <li><a href="#" class="menu__link menu__link--last link__hover-effect link__hover-effect--nav">Login</a></li>
+              <li>
+                <a href="#" class="menu__link--primary">Sign Up</a>
+              </li>
+          </div>
         </div>
       </nav>
       <div class="container">
