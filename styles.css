@@ -180,7 +180,7 @@ nav {
 .btn__menu {
     background-color: transparent;
     border: none;
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
     color: rgba(32, 34, 36, 0.8);
     transition: all 300ms ease;
@@ -413,6 +413,7 @@ nav {
     color: rgb(31, 35, 39);
     font-weight: 700;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .quality__para {
@@ -479,6 +480,7 @@ nav {
     color: rgb(31, 35, 39);
     font-weight: 700;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .step {
@@ -591,6 +593,7 @@ nav {
     font-size: 50px;
     color: rgb(31, 35, 39);
     font-weight: 700;
+    text-align: center;
 }
 
 .pricing__para {
@@ -1103,8 +1106,25 @@ footer {
         flex-direction: column;
     }
 
+    .landing__description--btn {
+        position: relative;
+        width: 100%;
+    }
+
+    .landing__description--input {
+        height: 50px;
+    }
+
     .features__title--headline {
         font-size: 36px;
+    }
+
+    .quality__img--wrapper,
+    .steps__img--wrapper,
+    .values__img--wrapper {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 64px;
     }
 
     .service {
@@ -1122,6 +1142,13 @@ footer {
 
     .service__description--title {
         margin-bottom: 12px;
+    }
+
+    .quality__headline,
+    .pricing__headline,
+    .steps__headline,
+    .features__title--headline {
+        font-size: 32px;
     }
 
     .contact__para {
@@ -1144,5 +1171,39 @@ footer {
     .link {
         width: calc(100%/5);
         text-align: center;
+    }
+}
+
+@media (max-width: 625px) {
+    .links {
+        justify-content: center;
+    }
+
+    .link {
+        width: calc(100%/4);
+    }
+}
+
+@media (max-width: 480px) {
+    .link {
+        width: calc(100%/3);
+    }
+}
+
+@media (max-width: 372px) {
+    .link {
+        width: calc(100%/2);
+    }
+
+    .service {
+        width: 90%;
+    }
+
+    .quality__para {
+        font-size: 14px;
+    }
+
+    .landing__description--input {
+        padding: 12px;
     }
 }
