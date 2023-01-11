@@ -222,12 +222,33 @@ nav {
 }
 
 @keyframes animate-menu-open {
-    
+    0% {
+        transform: translateX(150%);
+    }
+    80% {
+        transform: translateX(-15%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .menu--open {
     max-height: 450px;
-    animation: animate-menu-open 800ms backwards;
+    animation: animate-menu-open 200ms ease;
+}
+
+.menu--close {
+    animation: animate-menu-close 200ms ease;
+}
+
+@keyframes animate-menu-close {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(150%);
+    }
 }
 
 /* LANDING */

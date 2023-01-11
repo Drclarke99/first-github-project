@@ -1,7 +1,11 @@
+let element = document.getElementsByClassName("menu__backdrop")[0];
+
 function openMenu() {
-    document.body.classList += " menu--open";
+    element.classList.add("menu--open");
+    element.classList.remove("menu--close");
 }
 
 function closeMenu() {
-    document.body.classList.remove('menu--open');
+    element.classList.add("menu--close");
+    element.classList.remove("menu--open");
 }
