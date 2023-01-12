@@ -1,4 +1,4 @@
-let element = document.getElementsByClassName("menu__backdrop")[0];
+const element = document.querySelector('.menu__backdrop');
 
 function openMenu() {
     element.classList.add("menu--open");
