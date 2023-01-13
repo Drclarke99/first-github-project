@@ -251,7 +251,29 @@ nav {
     }
 }
 
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(150%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
 /* LANDING */
+#landing {
+    animation: slide-in-right 700ms ease;
+}
+
 .landing__description {
     display: flex;
     justify-content: center;
@@ -344,6 +366,10 @@ nav {
 }
 
 /* FEATURES */
+#features {
+    animation: slide-in-right 700ms ease;
+}
+
 .features__title--wrapper {
     display: flex;
     flex-direction: column;
